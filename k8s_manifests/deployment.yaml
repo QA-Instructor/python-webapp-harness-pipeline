@@ -14,7 +14,7 @@ spec:
         app: jokes-app
     spec:
       containers:
-      - image: victorialloyd/python-webapp:v1
+      - image: victorialloyd/python-webapp:v2
         name: python-jokes-app
         ports:
         - containerPort: 5000
