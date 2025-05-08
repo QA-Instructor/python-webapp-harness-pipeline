@@ -1,0 +1,5 @@
+service:
+  name: python_jokes_service
+  identifier: python_jokes_service
+  orgIdentifier: default
+  projectIdentifier: default_project
