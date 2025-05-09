@@ -11,7 +11,15 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: python_jokes_service
+            serviceRef: python_jokes_service_with_artifact
+            serviceInputs:
+              serviceDefinition:
+                type: Kubernetes
+                spec:
+                  artifacts:
+                    primary:
+                      primaryArtifactRef: <+input>
+                      sources: <+input>
           environment:
             environmentRef: harnessdevenv
             deployToAll: false
