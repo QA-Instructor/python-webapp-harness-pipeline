@@ -52,3 +52,10 @@ pipeline:
                 type: StageRollback
   identifier: pythonwebapppipelinewithartifacttrigger
   name: python-webapp-pipeline-with-artifact-trigger
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.account_github_connector
+        repoName: python_webapp_artifact_pipeline
+        build: <+input>
+        sparseCheckout: []
